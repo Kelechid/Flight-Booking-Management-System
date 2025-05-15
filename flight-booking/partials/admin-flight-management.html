@@ -1,0 +1,63 @@
+<!-- Flight Management Section -->
+<section id="flight-management">
+    <h2>Manage Flights</h2>
+
+    <!-- Add / Update Form -->
+    <form id="flightForm">
+        <input type="hidden" name="action" value="add" id="flightAction">
+
+        <label>Flight ID:</label>
+        <input type="text" name="flight_id" id="flight_id_input">
+
+        <label>Flight Number:</label>
+        <input type="text" name="flight_number"><br>
+
+        <label>Departure DateTime:</label>
+        <input type="datetime-local" name="d_datetime"><br>
+
+        <label>Arrival DateTime:</label>
+        <input type="datetime-local" name="a_datetime"><br>
+
+        <label>Departure Airport ID:</label>
+        <input type="text" name="d_airport_id"><br>
+
+        <label>Arrival Airport ID:</label>
+        <input type="text" name="a_airport_id"><br>
+
+        <label>Available Seats:</label>
+        <input type="number" name="available_seats"><br>
+
+        <label>Total Seats:</label>
+        <input type="text" name="total_seats"><br>
+
+        <label>Price:</label>
+        <input type="number" step="0.01" name="price"><br>
+
+        <button type="submit">Add Flight</button>
+    </form>
+
+    <!-- Clear Form Button -->
+    <button type="button" onclick="clearFlightForm()">Clear Form</button>
+
+
+    <!-- Update Button -->
+    <button
+        onclick="document.getElementById('flightAction').value = 'update'; document.getElementById('flightForm').requestSubmit();">
+        Update Flight
+    </button>
+
+    <!-- Delete Form -->
+    <form id="deleteFlightForm">
+        <h3>Delete Flight</h3>
+        <label>Enter Flight ID:</label>
+        <input type="text" name="flight_id" required>
+        <button type="submit">Delete Flight</button>
+    </form>
+
+    <!-- Display All Flights -->
+    <h3>All Flights</h3>
+    <div id="flightList" style="border: 1px solid #ccc; padding: 10px; max-height: 300px; overflow-y: auto;">
+        <!-- Populated dynamically -->
+    </div>
+
+</section>

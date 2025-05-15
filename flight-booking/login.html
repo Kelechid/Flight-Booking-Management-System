@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/auth.css" />
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="php/login.php" method="POST">
+            <label>Email</label>
+            <input type="email" name="email" required />
+
+            <label>Password</label>
+            <input type="password" name="password" required />
+
+            <label>Login as:</label>
+            <select name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+                <option value="accountant">Accountant</option>
+                <option value="technical">Technical Staff</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+
+
+
+    <script>
+        //document.querySelector("form").addEventListener("submit", function (e) {
+        //e.preventDefault(); // Prevent page reload
+
+        //const email = document.querySelector("input[type='email']").value.trim();
+        // const password = document.querySelector("input[type='password']").value.trim();
+        //const role = document.querySelector("select").value;
+
+        // Hardcoded demo credentials
+        //const credentials = {
+        //customer: {
+        //email: "customer@gmail.com",
+        //password: "customer",
+        //redirect: "customer.html"
+        //},
+        //admin: {
+        //email: "admin@gmail.com",
+        //password: "admin",
+        //redirect: "admin.html"
+        //}
+        // Add more roles here as needed (employee, technical)
+        // };
+
+        //if (
+        //credentials[role] &&
+        //credentials[role].email === email &&
+        //credentials[role].password === password
+        //) {
+        //window.location.href = credentials[role].redirect;
+        // } else {
+        //alert("Invalid email, password, or role combination.");
+        // }
+        // });
+    </script>
+
+</body>
+
+</html>

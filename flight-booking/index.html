@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="r.jpg" alt="Header" class="header-img" />
+        <nav>
+            <h1>SkyBook</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h2>Search Flights</h2>
+        <form class="search-form">
+            <input type="text" placeholder="From (e.g. IST)" required>
+            <input type="text" placeholder="To (e.g. LOS)" required>
+            <input type="date" required>
+            <input type="date" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="flight-results">
+        <h2>Available Flights</h2>
+        <div id="flights-list">
+            <!-- Placeholder cards -->
+            <div class="flight-card">
+                <p><strong>IST → LOS</strong></p>
+                <p>Departure: 09/05/2025</p>
+                <p>Return: 16/05/2025</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SkyBook. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

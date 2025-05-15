@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accountant Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h2>Account</h2>
+            <ul>
+                <li onclick="loadAccountantView('status')">Manage Status</li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <header class="dashboard-header">
+                <h1>Accountant Dashboard</h1>
+                <button onclick="logout()">Logout</button>
+            </header>
+
+            <main id="accountant-content">
+                <p>Select an action from the sidebar to begin.</p>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/accountant.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <h2>Admin</h2>
+            <ul>
+                <li onclick="loadAdminView('users')">Manage Users</li>
+                <li onclick="loadAdminView('flights')">Stats and Info</li>
+                <li onclick="loadAdminView('add-flight')">Manage Flight</li>
+                <li onclick="loadAdminView('bookings')">Bookings</li> <!-- ✅ New Bookings section -->
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <header class="dashboard-header">
+                <h1>Admin Dashboard</h1>
+                <button onclick="logout()">Logout</button>
+            </header>
+
+            <main id="admin-content">
+                <p>Select an action from the sidebar to begin.</p> <!-- ✅ Content will load here -->
+            </main>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/admin.js"></script> <!-- ✅ Handles loadAdminView -->
+</body>
+
+</html>

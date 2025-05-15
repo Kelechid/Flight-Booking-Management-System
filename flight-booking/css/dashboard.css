@@ -1,0 +1,95 @@
+/* Dashboard layout container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #002b5c;
+}
+
+.dashboard-header button {
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dashboard-header button:hover {
+    background-color: #004080;
+}
+
+
+
+#stats-result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#stats-result th,
+#stats-result td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#stats-result th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#stats-result tr:nth-child(even) {
+    background-color: #fafafa;
+}

@@ -1,0 +1,56 @@
+/* Auth Forms: Login & Register */
+.login-container,
+.register-container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2,
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #002b5c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #002b5c;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}

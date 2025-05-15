@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/auth.css" />
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h2>Create Account</h2>
+        <form action="php/register.php" method="POST">
+            <label>Full Name</label>
+            <input type="text" name="fullname" required />
+
+            <label>Email</label>
+            <input type="email" name="email" required />
+
+            <label>Password</label>
+            <input type="password" name="password" required />
+
+            <label>Select Role</label>
+            <select name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+                <option value="accountant">Accountant</option>
+                <option value="technical">Technical Staff</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
