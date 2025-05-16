@@ -12,12 +12,16 @@ Please note that all the JavaScript, HTML, CSS, and PHP files are in the flight 
 👥 User Roles
 
     Admin
+![Screenshot 2025-05-11 141413](https://github.com/user-attachments/assets/20b6d50c-8372-458b-9f77-3af954f82105)
 
         Full CRUD for Flights and Passengers
 
         Views all data via dashboard
+        
 
     Customer
+    
+![Screenshot 2025-05-11 005655](https://github.com/user-attachments/assets/f285da27-f897-4722-9889-0fec4fa8c55b)
 
         Registers and logs in
 
@@ -25,6 +29,7 @@ Please note that all the JavaScript, HTML, CSS, and PHP files are in the flight 
 
     Accountant
 
+       
         Updates booking and payment statuses
 
         Views financial outliers and discounts
